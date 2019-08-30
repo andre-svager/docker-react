@@ -1,0 +1,31 @@
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+RUN npm install
+
+COPY . .
+
+CMD ["npm","run","start"]
+						########## EXPLANATION  ##########
+
+# WORKDIR Define the work directory and then copy all the current dir, after run npm command
+
+
+# BUILD this file to image: 
+# $ sudo docker build -f Dockerfile.dev .
+
+
+# TAG this image
+# $ sudo docker tag <IMAGE_ID> frontend
+
+# RUN this container in a specific port:
+# $ sudo docker run -p 3000:3000 frontend
+
+
+# Because Dockerfile is limited, we need to create a too long command line.
+# RUN with local resources (Hot deployment)
+# $ sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app frontend
+
+# DOCKER COMPOSE came to help us to don't need a long command line.
