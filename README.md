@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, build an image:
 
-### `sudo docker build -f Dockerfile.dev .`
+### `$ sudo docker build -f Dockerfile.dev .`
 
 After, tag this image:
 
@@ -18,9 +18,10 @@ Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-The page will NOT reload if you make edits.<br>
+The page will NOT reload if you make edits because we need to expose local directory.<br>
+For do this, we will add volumes for local resources to reference volumes in CONTAINER:
 
-For do this, follow the next steps:
+$ sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app frontend
 
 ### `npm test`
 
