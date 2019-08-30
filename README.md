@@ -1,11 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), and dockerized with Dockerfile and docker-compose.
 
+## Execution with Dockerfile - Development environment
 
-## Available Scripts
+In the project directory, build an image:
 
-In the project directory, you can run:
+### `sudo docker build -f Dockerfile.dev .`
 
-### `npm start`
+After, tag this image:
+
+### `$ sudo docker tag <IMAGE_ID> frontend `
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
