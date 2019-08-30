@@ -1,8 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), and dockerized with Dockerfile and docker-compose.
+# Obs: If you don't have permission, add sudo to execute docker
 
 ## Execution with Dockerfile - Development environment
-
-## Obs: If you don't have permission, add sudo to execute docker
 
 In the project directory, build an image:
 
