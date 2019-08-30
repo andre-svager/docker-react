@@ -24,7 +24,7 @@ For do this, we will add volumes in the LOCAL resources to reference volumes in 
 <br />
 
 ## Execution with docker-compose - Development environment
-### `$ docker compose up` 
+### `$ docker-compose up` 
 <br />
 
 ## Execution with Test - Travis CI
