@@ -19,9 +19,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 The page will NOT reload if you make edits because we need to expose local directory.<br>
-For do this, we will add volumes for local resources to reference volumes in CONTAINER:
+For do this, we will add volumes for LOCAL resources to reference volumes in CONTAINER:
 
-$ sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app frontend
+`$ sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app frontend`
 
 ### `npm test`
 
